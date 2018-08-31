@@ -1,0 +1,70 @@
+body {
+  background-color: white;
+}
+
+#main {
+  background-color: rgb(231, 244, 254);
+  margin: 40px;
+  padding: 60px;
+  text-align: center;
+}
+
+#title {
+  text-decoration: underline; 
+  font-family: Times New Roman;
+  }
+  
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 40px;
+}
+
+.labels {
+  display: inline-block;
+  width: 50%;
+  text-align: right;
+  vertical-align: top;
+  padding-right: 20px;
+}
+
+.inputs {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.input-field {
+  width: 280px;
+  height: 35px;
+  padding: 5px;
+}
+.dropdown {
+  width: 140px;
+  height: 35px;
+  padding: 5px;
+}
+@media(max-width: 833px) {
+  .input-field{
+    width: 80%;
+  }
+  select{
+    width: 90%;
+  }
+}
+@media(max-width: 520px) {
+  .labels {
+    width: 100%;
+    text-align: left;
+  }
+  .inputs {
+    width: 80%;
+    float: left;
+  }
+  .input-field {
+    width: 100%;
+  }
+}
+ 
