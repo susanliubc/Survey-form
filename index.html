@@ -1,132 +1,255 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel='stylesheet' href='style.css'>
-    <link rel='stylesheet' href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-</head>
-<body>
-    <div id="main">
-        <h1 id="title">Survey Form</h1><br>
-        
-        <p id="description">Let us know how we can improve freecodecamp</p><br>
-        
-        <form id="survey-form" method="GET" action="https://crossorigin.me/https://freecodecamp.com">
-         <div class="row">
-          <div class="labels">
-           <label id="name-label" for="name">* Name: </label>
-          </div>
-        
-          <div class="inputs">
-           <input id="name" type="text" class="input-field" placeholder="Enter your name">
-          </div>
-         </div>
-            
-         <div class="row">
-          <div class="labels">
-           <label id="email-label" for="email">* Email: </label>
-          </div>
-          
-          <div class="inputs">
-           <input id="email" type="email" class="input-field" placeholder="Enter your email">
-          </div>
-         </div>
-           
-        <div class="row">
-         <div class="labels"> 
-          <label id="age-label" for="age">* Age: </label>
-         </div>
-           
-         <div class="inputs">
-          <input id="age" type="number" class="input-field" placeholder="age">
-         </div>
-        </div>
-        
-        <div class="row">
-         <div class="labels"> 
-          <label id="dropdown1" for="dropdown">Which option best describes your<br> current role? </label>
-         </div>
-         
-         <div class="inputs"> 
-          <select id="dropdown" class="dropdown">
-            <option value="student">Student</option>
-            <option value="Full time job">Full time job</option>
-            <option value="Full time learner">Full time learner</option>
-            <option value="Prefer not to say">Prefer not to say</option>
-            <option value="Ohter">Other</option>
-          </select>
-         </div>
-        </div>  
-         
-        <div class="row">
-         <div class="labels"> 
-          <label id="recommendation" for="HowLikely">* How likely is that you would<br> recommend Freecodecamp to a<br>friend? </label>
-         </div>
-          
-         <div class="inputs">
-           <input type="radio" name="HowLikely" value="Definitely"> Definitely<br><br>
-           <input type="radio" name="HowLikely" value="Maybe"> Maybe<br><br>
-           <input type="radio" name="HowLikely" value="Not sure"> Not sure
-          </div>
-         </div>
-          
-        <div class="row">
-         <div class="labels"> 
-          <label id="dropdown_2" for="dropdown2">What do you like most in FCC? </label>
-         </div>
-          
-         <div class="inputs">
-          <select id="dropdown2" class="dropdown">
-            <option value="Select an option">Select an option</option>
-            <option value="Challenges">Challenges</option>
-            <option value="Projects">Projects</option>
-            <option value="Community">Community</option>
-            <option value="Open source">Open source</option>
-          </select>
-         </div>
-        </div>
-          
-        <div class="row">
-         <div class="labels"> 
-          <label id="impOption" for="options">Things that sould be improved in<br>the future<br>(Check all that apply)</label>
-         </div>
-          
-         <div class="inputs">
-          <input type="checkbox" name="options" value="front-end"> 
-      Front-end Projects<br><br>
-          <input type="checkbox" name="options" value="Back-end Projects"> Back-end Projects<br><br>
-          <input type="checkbox" name="options" value="Data Visualization"> Data Visualization<br><br>
-          <input type="checkbox" name="options" value="Challenges"> Challenges<br><br>
-          <input type="checkbox" name="options" value="Open Source Community"> Open Source Community<br><br>
-          <input type="checkbox" name="options" value="Gitter Help Rooms"> Gitter Help Rooms<br><br>
-          <input type="checkbox" name="options" value="Videos"> Videos<br><br>
-          <input type="checkbox" name="options" value="City Meetups"> City Meetups<br><br>
-          <input type="checkbox" name-"options" value="Wiki"> Wiki<br><br>
-          <input type="checkbox" name="options" value="Forum"> Forum<br><br>
-          <input type="checkbox" name="options" value="Additional Courses"> Additional Courses
-         </div>
-        </div>
-          
-        <div class="row">
-         <div class="labels">
-          <label id="textarea" for="comment">Any comments or suggestions?</label>
-         </div>
-       
-         <div class="inputs">
-          <textarea name="comment" class="input-field" style="height:50px;resize:vertical" placeholder="Enter your comment here..."></textarea>
-         </div>
-        </div>
-             
-        <button id="submit" type="button" class="btn btn- primary">Submit</button>
-          
-       </form>   
-      </div>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Import fontawesome icon-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>SweetTime</title>
+</head>
+<body id="home" class="scrollspy">
+    <!--Main header-->
+    <header class="main-header">
+        <div class="navbar-fixed">
+            <nav class="orange lighten-3">
+                <div class="container">
+                    <div class="nav-wrapper grey-text">
+                        <a href="#" class="brand-logo">SweetTime</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="sweet.html">Sweets</a>
+                            </li>
+                            <li>
+                                <a href="contact.html">Contact</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Login</a>
+                            </li>
+                            <li>
+                                <a href="signup.html">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul id="mobile-nav" class="sidenav">
+            <h5 class="mobile-header amber-text text-darken-4">SweetTime</h5>
+            <li>
+                <a href="#home">Home</a>
+            </li>
+            <li>
+                <a href="sweet.html">Sweets</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="signup.html">Sign Up</a>
+            </li>
+        </ul>
+        <div class = "showcase container">
+            <div class = "col s12 main-text">
+                <h3 class="amber-text text-darken-4">Soul healing sweets</h3>
+            </div>
+        </div> 
+    </header>
+
+    <!--Section: about-->
+    <section class="section section-about orange lighten-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m6">
+                    <h4 class="grey-text">About SweetTime</h4>
+                    <p class="amber-text text-darken-4">Founded in 2009, SweetTime is a local dessert shop located in beautiful North Burnaby. We serve various deserts and drinks to enpower people and heal their souls in daily life.</p>
+                </div>
+                <div class="col s12 m6">
+                    <div class="row">
+                        <div class="col s12">
+                            <ul class="tabs">
+                                <li class="tab col s6"><a class="active amber-text text-darken-4" href="#retail">Retail</a></li>
+                                <li class="tab col s6"><a href="#catering" class="amber-text text-darken-4">Catering</a></li>
+                            </ul>
+                        </div>
+                        <div id="retail" class="col s12 grey-text text-darken-1">
+                            <h5>Retails</h5>
+                            <p>We provide all day retail service of all of the desserts and drinks listed on the webpage plus some seasonal specials</p>
+                        </div>
+                        <div id="catering" class="col s12 grey-text text-darken-1">
+                            <h5>Catering</h5>
+                            <p>We also provide catering service for 6-20 people. Please make a reservation at least 48 hours before the event.</p>
+                        </div>
+                    </div>    
+                </div> 
+            </div>       
+        </div>
+    </section>
+
+    <!--Section: feature-->
+    <section class="section section-feature center" id="feature">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card orange lighten-5">
+                        <div class="card-content">
+                            <span class="card-title amber-text text-darken-4">Fresh</span>
+                            <p class="grey-text text-darken-1">Daily freshly baked deserts. Never sale food made in the previous day. Always Fresh!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card orange lighten-5">
+                        <div class="card-content">
+                            <span class="card-title amber-text text-darken-4">Genuine</span>
+                            <p class="grey-text text-darken-1">Genuine material of Canadian wheat, New Zealand butter, Italian olive oil</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card orange lighten-5">
+                        <div class="card-content">
+                            <span class="card-title amber-text text-darken-4">Italian</span>
+                            <p class="grey-text text-darken-1">Authentic and classic Italian traditional desserts baking recipes. Real Italian!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Section: feature desert-->
+    <section class="section section-feature-desert center orange lighten-5 amber-text text-darken-3" id="feature-desert">
+        <div class="container">
+            <h3 class="center feature-header">Feature Desserts</h3>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <img src="img/cake-coffee-1-r.jpg" data-src="img/cookie-1-r.jpg" class="lazy materialboxed responsive-img" data-caption="Chocolate Cookie">
+                </div>
+                <div class="col s12 m6 l4">
+                    <img src="img/cake-coffee-1-r.jpg" data-src="img/cake-1-r.jpg" class="lazy materialboxed responsive-img" data-caption="Cup Cake">
+                </div>
+                <div class="col s12 m6 l4">
+                    <img src="img/cake-coffee-1-r.jpg" data-src="img/cake-2-r.jpg" class="lazy materialboxed responsive-img" data-caption="Orange Cake">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12 m6 l4">
+                    <img src="img/cake-coffee-1-r.jpg" data-src="img/cake-3-r.jpg" class="lazy materialboxed responsive-img" data-caption="Cream Butter Cake">
+                </div>
+                <div class="col s12 m6 l4">
+                    <img src="img/cake-coffee-1-r.jpg" data-src="img/cake-4-r.jpg" class="lazy materialboxed responsive-img" data-caption="Fruit Cake">
+                </div>
+                <div class="col s12 m6 l4">
+                    <img src="img/cake-coffee-1-r.jpg" data-src="img/cake-5-r.jpg" class="lazy materialboxed responsive-img" 
+                    data-caption="Cherry Pie">
+                </div>
+            </div>
+        </div>           
+    </section>
+
+    <!--Section:follow-->
+    <section id="follow" class="section section-follow amber-text text-darken-4 center scrollspy">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3>Follow SweetTime</h3>
+                    <p>Follow us on social media for special offers</p>
+                    <a href="#" class="orange-text text-lighten-3">
+                        <i class="fab fa-facebook fa-4x"></i>
+                    </a>
+                    <a href="#" class="orange-text text-lighten-3">
+                        <i class="fab fa-twitter fa-4x"></i>
+                    </a>
+                    <a href="#" class="orange-text text-lighten-3">
+                        <i class="fab fa-linkedin fa-4x"></i>
+                    </a>
+                    <a href="#" class="orange-text text-lighten-3">
+                        <i class="fab fa-google-plus fa-4x"></i>
+                    </a>
+                    <a href="#" class="orange-text text-lighten-3">
+                        <i class="fab fa-pinterest fa-4x"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="page-footer center orange lighten-3 white-text">
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m4">
+                    <h5>Operating Hours</h5>
+                    <br>
+                    <p>Mon-Fri: 7:00am-9:00am</p>
+                    <p>Sat-Sun: 8:00am-9:00am</p>
+                </div>
+                <div class="col s12 m4">
+                    <h5>Contact</h5>
+                    <p>604-653-7789</p>
+                    <p>1055 East Hasting Street</p>
+                    <p>info@sweettime.ca</p>
+                </div>
+                <div class="col s12 m4">
+                    <h5>Links</h5>
+                    <ul>
+                        <li><a class="white-text" href="index.html">Home</a></li>
+                        <li><a class="white-text" href="sweet.html">Sweets</a></li>
+                        <li><a class="white-text" href="contact.html">Contact</a></li>
+                        <li><a class="white-text" href="login.html">Login</a></li>
+                        <li><a class="white-text" href="signup.html">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container center">
+                SweetTime &copy; 2019
+            </div>
+        </div>
+    </footer>
+    <!--JavaScript at end of body for optimized loading-->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!--Lazy load images using yall.js library-->
+    <script src="node_modules/yall-js/dist/yall.min.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", yall);
+    </script>
+    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+
+    <!--Initialize Materialize widget-->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        //Sidenav
+        const sideNav = document.querySelector('.sidenav');
+        M.Sidenav.init(sideNav, {});
+
+        //Material boxed
+        const mb = document.querySelectorAll('.materialboxed');
+        M.Materialbox.init(mb, {});
+
+        //Tabs
+        const tab = document.querySelector('.tabs');
+        M.Tabs.init(tab, {});
+    })
+    </script>
 </body>
 </html>

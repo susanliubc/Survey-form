@@ -1,7 +1,5 @@
-# Survey-form
+# SweetTime
 
-Freecodecamp project for survey form
+Front end project for a dessert shop
 
-# This is the second freecodecamp project for responsive web design.
-
-The web page could be found in https://susanliubc.github.io/Survey-form/.
+Using HTML, CSS, Materialize.CSS, Yall.js for image lazy loading to improve web performance
